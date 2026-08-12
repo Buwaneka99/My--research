@@ -1,0 +1,31 @@
+# DeepSentinel — VAE-With-DSAA Dependencies
+# R26-IT-121 | IT22109194 | Wijesinghe L P D B
+# Install in Google Colab: !pip install -r requirements.txt
+
+# Data
+kagglehub
+pandas
+numpy
+
+# Machine Learning
+tensorflow>=2.12.0
+scikit-learn
+
+# Visualization
+matplotlib
+seaborn
+
+# Statistical Tests
+scipy
+
+# Hyperparameter Tuning (Stage 5)
+optuna
+
+# API (Step 7)
+fastapi
+uvicorn
+
+# Dashboard UI (streamlit_app.py)
+streamlit
+plotly
+

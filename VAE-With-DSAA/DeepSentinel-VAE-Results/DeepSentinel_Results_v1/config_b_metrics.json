@@ -1,0 +1,14 @@
+{
+  "precision": 0.3956602031394275,
+  "recall": 0.297776233495483,
+  "f1_score": 0.33980967486122127,
+  "auc_roc": 0.6433047419036262,
+  "fpr": 0.0035363181767834903,
+  "threshold": 1.7571637621111118,
+  "tp": 857,
+  "fp": 1309,
+  "tn": 368850,
+  "fn": 2021,
+  "config": "B - VAE_TRANSFER, Type-Specific Threshold",
+  "train_time_seconds": 47.07105469703674
+}

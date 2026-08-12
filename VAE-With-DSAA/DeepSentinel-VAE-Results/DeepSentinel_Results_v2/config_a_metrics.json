@@ -1,0 +1,16 @@
+{
+  "config": "A - Global VAE, Global Threshold",
+  "precision": 0.03949967083607637,
+  "recall": 0.010404022888850355,
+  "f1_score": 0.016469942355201758,
+  "auc_roc": 0.7838791015117001,
+  "fpr": 0.00042418142288881797,
+  "threshold": 2.7035248346664007,
+  "tp": 60,
+  "fp": 1459,
+  "tn": 3438107,
+  "fn": 5707,
+  "train_time_seconds": 2978.300413608551,
+  "epochs": 50,
+  "batch_size": 256
+}

@@ -1,0 +1,13 @@
+# local environment
+.venv/
+__pycache__/
+*.pyc
+
+# generated artefacts — regenerate by running the notebooks
+outputs/
+
+# raw dataset (~470 MB)
+data/raw/*.csv
+
+# notebook checkpoints
+.ipynb_checkpoints/

@@ -1,0 +1,31 @@
+# VAE-With-DSAA — local (laptop) dependencies
+# R26-IT-121 | IT22109194 | Wijesinghe L P D B
+#
+# Install into the project venv, NOT into system Python:
+#     .\.venv\Scripts\python.exe -m pip install -r requirements-local.txt
+#
+# TensorFlow needs Python 3.9-3.13. Python 3.14 has no TF wheels, which is
+# why setup_local.ps1 builds the venv from Python 3.12 specifically.
+#
+# On Windows, TensorFlow >= 2.11 is CPU-only (GPU support moved to WSL2).
+# That is fine here: the VAEs are ~2,400 parameters each.
+
+# --- core ---
+tensorflow==2.20.0        # same version the Colab runs used, so the saved
+                          # .keras weights load without a Keras version warning
+numpy>=1.26,<2.3          # upper bound is TensorFlow 2.20's constraint
+pandas>=2.2,<3.0          # pandas 3.x changes copy semantics; stay on 2.x
+scikit-learn>=1.4
+scipy>=1.11
+
+# --- figures ---
+matplotlib>=3.8
+seaborn>=0.13
+
+# --- notebooks ---
+jupyterlab>=4.0
+ipykernel>=6.29
+
+# --- optional ---
+psutil>=5.9               # RAM readout in the local_setup banner
+kagglehub>=0.3            # only needed if you re-download raw PaySim

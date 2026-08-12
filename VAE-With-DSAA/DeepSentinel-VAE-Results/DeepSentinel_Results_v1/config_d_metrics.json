@@ -1,0 +1,15 @@
+{
+  "config": "D - Stratified Ensemble (3 VAEs, per-type thresholds)",
+  "precision": 0.3068208092485549,
+  "recall": 0.161573115792037,
+  "f1_score": 0.2116765034295741,
+  "auc_roc": 0.6024290672597097,
+  "fpr": 0.001085368308403893,
+  "threshold_transfer": 1.7571637621111118,
+  "threshold_cashout": 2.3376224813785056,
+  "tp": 1327,
+  "fp": 2998,
+  "tn": 2759198,
+  "fn": 6886,
+  "train_time_seconds": 368.80069875717163
+}

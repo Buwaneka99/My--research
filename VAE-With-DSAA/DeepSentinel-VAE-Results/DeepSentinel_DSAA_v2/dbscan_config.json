@@ -1,0 +1,9 @@
+{
+  "eps": 0.1177983371123129,
+  "min_samples": 10,
+  "metric": "euclidean",
+  "n_clusters_discovered": 19,
+  "n_noise_points": 457,
+  "silhouette_score": 0.35873339567066237,
+  "n_fraud_analysed": 8213
+}

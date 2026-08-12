@@ -1,0 +1,59 @@
+# ============================================================
+# DeepSentinel — Research monorepo (root)
+# R26-IT-121
+# ============================================================
+# Per-project .gitignore files also apply inside each subfolder.
+
+# ─── Large feature-engineered datasets (1.86 GB) ───────────────────────
+# Regenerate with the Feature Engineering notebook; masters live in Drive.
+*.csv
+*.parquet
+*.npy
+
+# ─── Personal documents (not part of the research) ─────────────────────
+"MY CV"/
+MY CV/
+
+# ─── Safety net for the nested-repo flattening helper ──────────────────
+.git_disabled_tmp/
+
+# ─── Secrets ───────────────────────────────────────────────────────────
+.env
+.env.local
+*.key
+*.pem
+kaggle.json
+secrets/
+
+# ─── Python ────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# ─── Virtual environments ──────────────────────────────────────────────
+.venv/
+venv/
+env/
+ENV/
+
+# ─── Jupyter ───────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+
+# ─── IDE / OS ──────────────────────────────────────────────────────────
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+
+# ─── Logs ──────────────────────────────────────────────────────────────
+*.log
+logs/
+runs/
+wandb/

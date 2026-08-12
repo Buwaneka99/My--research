@@ -1,0 +1,3 @@
+- [DeepSentinel VAE-DSAA project](deepsentinel-vae-dsaa-project.md) — Buwaneka's research component, team layout, and the ~24 Aug 2026 deadline.
+- [VAE-DSAA known defects](vae-dsaa-known-defects.md) — the two opposite KL failures, Free Bits misconfiguration, and ablation-fairness problems.
+- [VAE-DSAA benchmarking position](vae-dsaa-benchmarking-position.md) — how his unsupervised results really compare to the supervised teammates, and how to defend it.
