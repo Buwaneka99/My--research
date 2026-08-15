@@ -23,6 +23,9 @@ matplotlib>=3.8
 seaborn>=0.13
 
 # --- notebooks ---
+# Both UIs, so `jupyter notebook` and `jupyter lab` each work. ipykernel is
+# also what VS Code's notebook editor talks to.
+notebook>=7.0
 jupyterlab>=4.0
 ipykernel>=6.29
 

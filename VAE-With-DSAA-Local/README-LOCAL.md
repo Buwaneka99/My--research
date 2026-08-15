@@ -62,11 +62,23 @@ powershell -ExecutionPolicy Bypass -File .\setup_local.ps1
 
 ```powershell
 .\.venv\Scripts\Activate.ps1
-jupyter lab
+
+jupyter notebook        # classic UI
+# හෝ
+jupyter lab             # JupyterLab
 ```
 
+දෙකම වැඩ කරනවා — කැමති එකක් පාවිච්චි කරන්න.
+
 Notebook එකක් open කරලා, උඩ දකුණේ kernel එක **Python (deepsentinel)** කියලා
-තියෙනවද බලන්න (notebooks වල default එකම ඒක).
+තියෙනවද බලන්න (notebooks වල default එකම ඒක). වෙන එකක් තෝරලා තිබ්බොත්
+*Kernel → Change kernel → Python (deepsentinel)*.
+
+**VS Code එකේ notebook editor එකේ run කරනවා නම්:** උඩ දකුණේ *Select Kernel* →
+*Python Environments* → `.venv` (Python 3.12) එක තෝරන්න.
+
+> ⚠️ Kernel එක වැරදුනොත් `import tensorflow` එකේදී `ModuleNotFoundError` එකක්
+> එනවා — ඒ කියන්නේ Python 3.14 kernel එකට වැටිලා. Kernel එක මාරු කරන්න.
 
 ### Notebook order
 
