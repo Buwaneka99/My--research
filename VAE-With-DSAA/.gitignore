@@ -20,7 +20,6 @@ data/processed/*
 # Saved models and results (too large — stored in Google Drive)
 results/*
 models/*
-DeepSentinel-VAE-Results/
 !results/.gitkeep
 !models/.gitkeep
 *.keras
@@ -39,3 +38,15 @@ __pycache__/
 # OS files
 .DS_Store
 Thumbs.db
+
+# ─── DeepSentinel-VAE-Results ──────────────────────────────────────────
+# Keep the artefacts that make the results reproducible/reviewable
+# (~20 MB total). The 11 feature-dump CSVs (~1.86 GB) stay ignored via
+# the *.csv rule above and in the root .gitignore — they live in Drive.
+# Negations must come last: the final matching pattern wins.
+!DeepSentinel-VAE-Results/**/*.png
+!DeepSentinel-VAE-Results/**/*.json
+!DeepSentinel-VAE-Results/**/*.keras
+!DeepSentinel-VAE-Results/**/*.h5
+!DeepSentinel-VAE-Results/**/*.pkl
+!DeepSentinel-VAE-Results/**/*.npz
